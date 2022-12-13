@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/Favicon.svg"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1><img src="img/alura-logo.svg" alt="Logo Alura"></h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <div class="box-left">
+                    <div class="reading">
+                        <textarea id="readText" placeholder="Ingrese su texto aqui"></textarea>
+                        <p id="msg-empty-section">-</p>
+                        <p id="msg-error"><img src="img/Info.svg" > Solo letras minúsculas y sin acentos</p>
+                        <button id="btnEncrypt" class="btn-section">Encriptar!</button>
+                        <button id="btnDecrypt" class="btn-section">Desencriptar!</button>
+                        <button id="btnDel" class="btn-section">Borrar!</button>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <div class="box-right">
+                    <div id="result-on">
+                        <textarea id="resultText" readonly></textarea>
+                        <p id="msg-empty-aside">-</p>
+                        <p id="msg-info"><img src="img/Info.svg" alt=""> Texto copiado al portapapeles</p>
+                        <button id="btnCopy" class="btn-aside">Copiar</button>
+                    </div>
+                    <div id="result-off">
+                        <img src="img/Muñeco.svg" alt="">
+                        <h3>Ningún Mensaje Fue encontrado</h3>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>Alura Challenger 1 - Develop by J. Garcia 2022</p>
+        <a target="_blank" href="https://www.linkedin.com/in/john-german-garcia-gonzalez-b64b2b3a/"><img src="img/LinkedIn_Logo.svg" alt="LinkedIn"></a>
+        <a target="_blank" href="https://github.com/johnger69"><img src="img/Github_Logo.svg" alt="Github"></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
